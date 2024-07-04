@@ -16,6 +16,10 @@ import java.util.UUID;
 public class ClientServerConfig {
     @Bean
     public RegisteredClientRepository registeredClientRepository() {
+
+     // build logic to handle federation like custom grantype
+
+
         RegisteredClient registeredClient1 = RegisteredClient.withId(UUID.randomUUID().toString())
                 .clientId("client1-id")
                 .clientSecret("{noop}client1-secret")
